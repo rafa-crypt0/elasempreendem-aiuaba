@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>ElasEmpreendem Aiuaba</title>
+<script src="./vendor/react.js"></script>
+<script src="./vendor/react-dom.js"></script>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#A3174F}a:hover{color:#7A0F3A}
+</style>
+</helmet>
+<div style="font-family: Inter, system-ui, sans-serif; color: #1F1A2E; background: #FFFFFF; line-height: 1.5">
+
+<!-- NAV -->
+<header style="border-bottom: 1px solid #ECE7EF">
+<div style="max-width: 1180px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#topo" style="display: flex; align-items: center; gap: 10px; text-decoration: none; color: #1F1A2E">
+<svg width="36" height="36" viewBox="0 0 36 36" aria-hidden="true"><rect width="36" height="36" rx="10" fill="#A3174F"></rect><path d="M11 24 L18 11 L25 24" stroke="#F5B83D" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="18" cy="26" r="2" fill="#FFFFFF"></circle></svg>
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 22px; letter-spacing: -0.5px">ElasEmpreendem <span style="color: #A3174F">Aiuaba</span></span>
+</a>
+<nav aria-label="Principal" style="display: flex; flex-wrap: wrap; align-items: center; gap: 24px; font-size: 15px; font-weight: 500">
+<a href="#como-funciona" style="color: #4A4458; text-decoration: none">Como funciona</a>
+<a href="#para-quem" style="color: #4A4458; text-decoration: none">Para quem é</a>
+<a href="#comecar" style="color: #4A4458; text-decoration: none">Como começar</a>
+<a href="#cadastro" style="background: #A3174F; color: #FFFFFF; text-decoration: none; padding: 12px 20px; border-radius: 999px; font-weight: 600">Quero participar</a>
+</nav>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="topo" style="background: #FBF3F6">
+<div style="max-width: 1180px; margin: 0 auto; padding: 72px 24px 80px; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
+<span style="align-self: flex-start; background: #F5B83D; color: #1F1A2E; font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 999px">Aiuaba – CE · Gratuito · Feito para o celular</span>
+<h1 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(40px, 6vw, 64px); line-height: 1.02; letter-spacing: -1.5px">A Feira da Mulher Empreendedora de Aiuaba, aberta o ano inteiro.</h1>
+<p style="margin: 0; font-size: 19px; color: #4A4458; max-width: 540px">Mostre seus produtos para clientes de Aiuaba e região, aprenda a gerir o seu negócio e conecte-se com outras empreendedoras — tudo pelo celular, mesmo depois que a feira acaba.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+<a href="#cadastro" style="background: #A3174F; color: #FFFFFF; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 17px">Quero participar</a>
+<a href="#como-funciona" style="background: #FFFFFF; color: #1F1A2E; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 17px; border: 1.5px solid #1F1A2E">Ver como funciona</a>
+</div>
+</div>
+
+<!-- Hero visual: vitrine mock -->
+<div style="flex: 1 1 360px; min-width: 0; display: flex; justify-content: center">
+<div style="width: 100%; max-width: 380px; background: #FFFFFF; border-radius: 28px; box-shadow: 0 24px 60px rgba(122, 15, 58, 0.18); padding: 20px; display: flex; flex-direction: column; gap: 14px">
+<div style="display: flex; align-items: center; justify-content: space-between">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 20px">Vitrine</span>
+<span style="font-size: 13px; color: #6B6478">Aiuaba – CE</span>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap">
+<span style="background: #A3174F; color: #FFFFFF; font-size: 13px; padding: 6px 12px; border-radius: 999px">Todos</span>
+<span style="background: #F3EEF5; font-size: 13px; padding: 6px 12px; border-radius: 999px">Doces</span>
+<span style="background: #F3EEF5; font-size: 13px; padding: 6px 12px; border-radius: 999px">Artesanato</span>
+<span style="background: #F3EEF5; font-size: 13px; padding: 6px 12px; border-radius: 999px">Beleza</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; border: 1px solid #ECE7EF; border-radius: 18px; padding: 12px">
+<div style="width: 56px; height: 56px; border-radius: 14px; background: #F5B83D; flex: none"></div>
+<div style="flex: 1; min-width: 0"><div style="font-weight: 600">[Nome do negócio]</div><div style="font-size: 13px; color: #6B6478">Doces caseiros · Sede</div></div>
+<span style="background: #1F8A5B; color: #FFFFFF; font-size: 12px; font-weight: 600; padding: 8px 10px; border-radius: 10px">WhatsApp</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; border: 1px solid #ECE7EF; border-radius: 18px; padding: 12px">
+<div style="width: 56px; height: 56px; border-radius: 14px; background: #E9B4C8; flex: none"></div>
+<div style="flex: 1; min-width: 0"><div style="font-weight: 600">[Nome do negócio]</div><div style="font-size: 13px; color: #6B6478">Artesanato · Zona rural</div></div>
+<span style="background: #1F8A5B; color: #FFFFFF; font-size: 12px; font-weight: 600; padding: 8px 10px; border-radius: 10px">WhatsApp</span>
+</div>
+<div style="display: flex; gap: 12px; align-items: center; border: 1px solid #ECE7EF; border-radius: 18px; padding: 12px">
+<div style="width: 56px; height: 56px; border-radius: 14px; background: #C9D8F2; flex: none"></div>
+<div style="flex: 1; min-width: 0"><div style="font-weight: 600">[Nome do negócio]</div><div style="font-size: 13px; color: #6B6478">Salão de beleza · Sede</div></div>
+<span style="background: #1F8A5B; color: #FFFFFF; font-size: 12px; font-weight: 600; padding: 8px 10px; border-radius: 10px">WhatsApp</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- NUMBERS -->
+<section style="background: #1F1A2E; color: #FFFFFF">
+<div style="max-width: 1180px; margin: 0 auto; padding: 56px 24px; display: flex; flex-direction: column; gap: 28px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 26px; max-width: 720px">Aiuaba tem talento. Falta uma vitrine que dure o ano inteiro.</h2>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #F5B83D; padding-top: 16px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 52px; color: #F5B83D; line-height: 1">VII</span>
+<span style="color: #D9D4E0">edições da Feira da Mulher Empreendedora de Aiuaba</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #F5B83D; padding-top: 16px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 52px; color: #F5B83D; line-height: 1">14 mil</span>
+<span style="color: #D9D4E0">moradores em Aiuaba (Censo 2022)</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px; border-top: 2px solid #F5B83D; padding-top: 16px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 52px; color: #F5B83D; line-height: 1">87%</span>
+<span style="color: #D9D4E0">das donas de negócio no Brasil trabalham sozinhas</span>
+</div>
+</div>
+<p style="margin: 0; font-size: 13px; color: #B5AEC0">Fontes: Prefeitura Municipal de Aiuaba (2026), IBGE – Censo 2022 e Sebrae/PNADC (2023).</p>
+</div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="como-funciona">
+<div style="max-width: 1180px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 14px; font-weight: 600; color: #A3174F; text-transform: uppercase; letter-spacing: 1px">Como funciona</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; letter-spacing: -1px">Tudo o que seu negócio precisa, num só lugar</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+
+<div style="background: #FBF3F6; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A3174F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 6h7a3 3 0 0 1 3 3v11a2 2 0 0 0-2-2H2z"></path><path d="M22 6h-7a3 3 0 0 0-3 3v11a2 2 0 0 1 2-2h8z"></path></svg>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Aprenda</h3>
+<p style="margin: 0; color: #4A4458">Aulas de 5 a 10 minutos sobre preço, fluxo de caixa, MEI e redes sociais. Assista quando der.</p>
+</div>
+
+<div style="background: #FBF3F6; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A3174F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="2" width="16" height="20" rx="2"></rect><path d="M8 6h8M8 11h2M14 11h2M8 15h2M14 15h2M8 19h8"></path></svg>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Ferramentas</h3>
+<p style="margin: 0; color: #4A4458">Calculadora de preço de venda e controle simples de entradas e saídas do seu caixa.</p>
+</div>
+
+<div style="background: #FBF3F6; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A3174F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l1.5-5h15L21 9"></path><path d="M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0z"></path><path d="M5 14v7h14v-7"></path></svg>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Vitrine</h3>
+<p style="margin: 0; color: #4A4458">Um perfil para o seu negócio, com fotos dos produtos e botão direto para o seu WhatsApp.</p>
+</div>
+
+<div style="background: #FBF3F6; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A3174F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="8" r="3.5"></circle><circle cx="17" cy="9" r="2.5"></circle><path d="M2.5 20a6.5 6.5 0 0 1 13 0"></path><path d="M15.5 14.5A5 5 0 0 1 21.5 19"></path></svg>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Rede</h3>
+<p style="margin: 0; color: #4A4458">O grupo das empreendedoras de Aiuaba, da sede e da zona rural, com troca de experiências e mentoria.</p>
+</div>
+
+<div style="background: #FBF3F6; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#A3174F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"></path><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"></path></svg>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Oportunidades</h3>
+<p style="margin: 0; color: #4A4458">Datas e inscrições da feira, cursos, editais e linhas de crédito reunidos num mural fácil de consultar.</p>
+</div>
+
+<div style="background: #A3174F; color: #FFFFFF; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; justify-content: space-between; gap: 16px">
+<p style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 600; font-size: 24px; line-height: 1.2">Comece pela Vitrine e pelas aulas. O resto vem junto, no seu ritmo.</p>
+<a href="#cadastro" style="align-self: flex-start; background: #FFFFFF; color: #A3174F; text-decoration: none; padding: 14px 22px; border-radius: 999px; font-weight: 600">Quero participar</a>
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOR WHOM -->
+<section id="para-quem" style="background: #F7F5F9">
+<div style="max-width: 1180px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 14px; font-weight: 600; color: #A3174F; text-transform: uppercase; letter-spacing: 1px">Para quem é</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; letter-spacing: -1px">Para toda mulher de Aiuaba que empreende — ou quer começar</h2>
+</div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+<div style="background: #FFFFFF; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; color: #F5B83D; line-height: 1">01</span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Está começando</h3>
+<p style="margin: 0; color: #4A4458">Tem uma ideia ou vende sem CNPJ. Aprenda a calcular preço e custos e a se formalizar como MEI.</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; color: #F5B83D; line-height: 1">02</span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Já tem o negócio rodando</h3>
+<p style="margin: 0; color: #4A4458">Vende pelo WhatsApp e expõe na feira. Organize as finanças e continue vendendo o ano todo.</p>
+</div>
+<div style="background: #FFFFFF; border-radius: 22px; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 40px; color: #F5B83D; line-height: 1">03</span>
+<h3 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-size: 22px">Quer crescer</h3>
+<p style="margin: 0; color: #4A4458">Pensa em contratar ou abrir um ponto. Encontre crédito, mentoria e parcerias.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- STEPS -->
+<section id="comecar">
+<div style="max-width: 1180px; margin: 0 auto; padding: 88px 24px; display: flex; flex-direction: column; gap: 40px">
+<div style="display: flex; flex-direction: column; gap: 12px; max-width: 640px">
+<span style="font-size: 14px; font-weight: 600; color: #A3174F; text-transform: uppercase; letter-spacing: 1px">Como começar</span>
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; letter-spacing: -1px">Três passos e você está dentro</h2>
+</div>
+<ol style="margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 32px">
+<li style="display: flex; gap: 16px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #A3174F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px">1</span>
+<div><h3 style="margin: 0 0 6px; font-size: 19px">Faça seu cadastro</h3><p style="margin: 0; color: #4A4458">Leva menos de 2 minutos, direto pelo celular.</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #A3174F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px">2</span>
+<div><h3 style="margin: 0 0 6px; font-size: 19px">Monte sua vitrine</h3><p style="margin: 0; color: #4A4458">Adicione fotos, descrição e o WhatsApp do seu negócio.</p></div>
+</li>
+<li style="display: flex; gap: 16px; align-items: flex-start">
+<span style="flex: none; width: 48px; height: 48px; border-radius: 999px; background: #A3174F; color: #FFFFFF; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 18px">3</span>
+<div><h3 style="margin: 0 0 6px; font-size: 19px">Aprenda e conecte-se</h3><p style="margin: 0; color: #4A4458">Assista às aulas e entre no grupo das empreendedoras de Aiuaba.</p></div>
+</li>
+</ol>
+</div>
+</section>
+
+<!-- SIGNUP -->
+<section id="cadastro" style="background: #FBF3F6">
+<div style="max-width: 1180px; margin: 0 auto; padding: 88px 24px; display: flex; flex-wrap: wrap; gap: 48px; align-items: flex-start">
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 16px">
+<h2 style="margin: 0; font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: clamp(32px, 4vw, 44px); line-height: 1.1; letter-spacing: -1px">Entre para a lista de lançamento</h2>
+<p style="margin: 0; font-size: 18px; color: #4A4458">A primeira versão começa com as expositoras da VII Feira da Mulher Empreendedora de Aiuaba. Deixe seu contato e avisamos quando abrir.</p>
+<p style="margin: 0; font-size: 15px; color: #4A4458">Acesso gratuito. Seus dados são usados só para falar com você sobre a plataforma.</p>
+</div>
+<form style="flex: 1 1 420px; min-width: 0; background: #FFFFFF; border-radius: 24px; padding: 32px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 16px 40px rgba(122, 15, 58, 0.10)">
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="nome" style="font-weight: 600; font-size: 15px">Seu nome</label>
+<input id="nome" type="text" placeholder="Como você quer ser chamada" style="font: inherit; padding: 14px 16px; border: 1.5px solid #CFC7D8; border-radius: 12px; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="whats" style="font-weight: 600; font-size: 15px">WhatsApp</label>
+<input id="whats" type="tel" placeholder="(00) 00000-0000" style="font: inherit; padding: 14px 16px; border: 1.5px solid #CFC7D8; border-radius: 12px; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
+<label for="cidade" style="font-weight: 600; font-size: 15px">Comunidade</label>
+<input id="cidade" type="text" placeholder="Sede ou nome da comunidade" style="font: inherit; padding: 14px 16px; border: 1.5px solid #CFC7D8; border-radius: 12px; min-height: 48px; box-sizing: border-box">
+</div>
+<div style="flex: 1 1 160px; display: flex; flex-direction: column; gap: 6px">
+<label for="ramo" style="font-weight: 600; font-size: 15px">Ramo do negócio</label>
+<select id="ramo" style="font: inherit; padding: 14px 16px; border: 1.5px solid #CFC7D8; border-radius: 12px; min-height: 48px; background: #FFFFFF; box-sizing: border-box">
+<option>Alimentação</option>
+<option>Moda</option>
+<option>Beleza</option>
+<option>Artesanato</option>
+<option>Serviços</option>
+<option>Outro</option>
+</select>
+</div>
+</div>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<label for="fase" style="font-weight: 600; font-size: 15px">Em que fase você está?</label>
+<select id="fase" style="font: inherit; padding: 14px 16px; border: 1.5px solid #CFC7D8; border-radius: 12px; min-height: 48px; background: #FFFFFF; box-sizing: border-box">
+<option>Tenho uma ideia / estou começando</option>
+<option>Meu negócio já funciona</option>
+<option>Quero expandir</option>
+</select>
+</div>
+<button type="button" style="font: inherit; font-weight: 600; font-size: 17px; background: #A3174F; color: #FFFFFF; border: 0; border-radius: 999px; padding: 16px 24px; min-height: 52px; cursor: pointer">Quero entrar na lista</button>
+</form>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #1F1A2E; color: #D9D4E0">
+<div style="max-width: 1180px; margin: 0 auto; padding: 40px 24px; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; font-size: 14px">
+<span style="font-family: 'Bricolage Grotesque', sans-serif; font-weight: 800; font-size: 18px; color: #FFFFFF">ElasEmpreendem Aiuaba</span>
+<span>Projeto Integrado I · ADS · UFCA · Polo Aiuaba – CE · Equipe 01 · 2026</span>
+</div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1280,"height":4300}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>
